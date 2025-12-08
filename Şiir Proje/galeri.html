@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sözlerin İzinde - Galeri</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Sözlerin İzinde</div>
+            <ul>
+                <li><a href="anasayfa.html">Anasayfa</a></li>
+                <li class="dropdown">
+                    <a href="siirler.html">Şiir Kategorileri ▼</a>
+                    <div class="dropdown-content">
+                        <a href="karanlik_siirler.html">Karanlık</a>
+                        <a href="umutlu_siirler.html">Umutlu</a>
+                        <a href="ask_siirleri.html">Aşık</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="">Resim ▼</a>
+                    <div class="dropdown-content">
+                        <a href="ressamlar.html">Ressamlar</a>
+                        <a href="galeri.html">Tablolar</a>
+                    </div>
+                </li>
+                <li><a href="galeri.html">Galeri</a></li>
+                <li><a href="hakkimda.html">Hakkımda</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Ünlü Tablolar Koleksiyonu</h1>
+        <p style="text-align: center;">Sanat tarihinin en seçkin eserleri.<br>(Büyütmek için tıklayınız)</p>
+        <hr style="width: 50%; margin: 20px auto; border-color: #8d6e63;">
+
+        <div class="gallery-grid">
+            
+            <div class="gallery-item">
+                <img src="resimler/Vincent_van_Gogh_-_Self-Portrait_-_Google_Art_Project.jpg" loading="lazy" onclick="acResim(this.src)" alt="Otoportre">
+                <p>Van Gogh - Otoportre</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="resimler/Monet_-_Impression,_Sunrise.jpg" loading="lazy" onclick="acResim(this.src)" alt="Gün Doğumu">
+                <p>İzlenim: Gün Doğumu (Monet)</p>
+            </div>
+            <div class="gallery-item">
+                <img src="resimler/Claude_Monet_1899_Nadar_crop.jpg" loading="lazy" onclick="acResim(this.src)" alt="Monet">
+                <p>Claude Monet</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="resimler/The_Kiss_-_Gustav_Klimt_-_Google_Cultural_Institute.jpg" loading="lazy" onclick="acResim(this.src)" alt="Öpücük">
+                <p>Öpücük (Klimt)</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="resimler/Raffaello_Sanzio.jpg" loading="lazy" onclick="acResim(this.src)" alt="Rafael">
+                <p>Rafael - Otoportre</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="resimler/1665_Girl_with_a_Pearl_Earring.jpg" loading="lazy" onclick="acResim(this.src)" alt="İnci Küpeli Kız">
+                <p>İnci Küpeli Kız (Vermeer)</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="resimler/Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg" loading="lazy" onclick="acResim(this.src)" alt="Mona Lisa">
+                <p>Mona Lisa (Da Vinci)</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="resimler/Michelangelo_-_Creation_of_Adam_(cropped).jpg" loading="lazy" onclick="acResim(this.src)" alt="Adem'in Yaratılışı">
+                <p>Adem'in Yaratılışı (Michelangelo)</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="resimler/El_jardín_de_las_Delicias,_de_El_Bosco.jpg" loading="lazy" onclick="acResim(this.src)" alt="Dünyevi Zevkler Bahçesi">
+                <p>Dünyevi Zevkler Bahçesi (Bosch)</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="resimler/Francisco_de_Goya,_Saturno_devorando_a_su_hijo_(1819-1823).jpg" loading="lazy" onclick="acResim(this.src)" alt="Satürn">
+                <p>Çocuklarını Yiyen Satürn (Goya)</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="resimler/Vincent_van_Gogh_-_Almond_blossom_-_Google_Art_Project.jpg" loading="lazy" onclick="acResim(this.src)" alt="Badem Çiçekleri">
+                <p>Badem Çiçekleri (Vincent)</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="resimler/The_Red_Kerchief,_by_Claude_Monet,_Cleveland_Museum_of_Art,_1958.39.jpg"loading="lazy" onclick="acResim(this.src)" alt="The Red Kerchief">
+                <p>Kırmızı Pelerin (Monet)</p>
+            </div>
+
+
+            <div class="gallery-item">
+                <img src="resimler/Great_Wave_off_Kanagawa2.jpg" loading="lazy" onclick="acResim(this.src)" alt="Kanagawa Dalgası">
+                <p>Büyük Kanagawa Dalgası(Hokusai)</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="resimler/Soir_Bleu.jpg" loading="lazy" onclick="acResim(this.src)" alt="Soir_Bleu">
+                <p>Soir Bleu(Hooper)</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="resimler/Nighthawks_by_Edward_Hopper_1942.jpg" loading="lazy" onclick="acResim(this.src)" alt="Nighthawks">
+                <p>Nighthawks(Hooper)</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="resimler/_The_School_of_Athens__by_Raffaello_Sanzio_da_Urbino.jpg" loading="lazy" onclick="acResim(this.src)" alt="Atina Okulu">
+                <p>Atina Okulu(Rafael)</p>
+            </div>
+
+            <div class="gallery-item">
+                <img src="resimler/Leonardo_da_Vinci,_Salvator_Mundi,_c.1500,_oil_on_walnut,_45.4_×_65.6_cm.jpg" loading="lazy" onclick="acResim(this.src)" alt="Salvator Mundi">
+                <p>Salvator Mundi(Da Vinci)</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="myLightbox" class="lightbox">
+        <span class="close" onclick="kapatResim()">&times;</span>
+        <img class="lightbox-content" id="img01">
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Sözlerin İzinde - Sanat Projesi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

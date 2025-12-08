@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+    <meta charset="UTF-8">
+    <title>Sözlerin İzinde -- Anasayfa</title>
+    <link rel="stylesheet" href="style.css"> <!-- Harici CSS dosyasını (style.css) sayfaya bağlar. -->
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <div class="logo">Sözlerin İzinde</div>
+                <ul>
+                    <li><a href="anasayfa.html">Anasayfa</a></li>
+                    <li class="dropdown">
+                        <a href="siirler.html">Şiir Kategorileri ▼</a>
+                        <div class="dropdown-content">
+                        <a href="karanlik_siirler.html">Karanlık</a>
+                        <a href="umutlu_siirler.html">Umutlu</a>
+                        <a href="ask_siirleri.html">Aşık</a>
+                    </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="">Resim ▼</a>
+                        <div class="dropdown-content">
+                        <a href="ressamlar.html">Ressamlar</a>
+                        <a href="galeri.html">Tablolar</a>
+                    </div>
+                    </li>
+                    <li><a href="galeri.html">Galeri</a></li>
+                    <li><a href="hakkimda.html">Hakkımda</a></li>
+                    <li><a href="iletisim.html">İletişim</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="container">
+            <h1>Hoş geldiniz!</h1>
+            <p>Bu sitede genelde kendimden ve insandan bahsettiğim içerikler göreceksiniz. Şiir dünyasında içsel yolculuklara hazır olun. Keyifli okumalar :)</p>
+        <br>
+            <h2>Günün İçeriği</h2>
+            <div class="quote-box">
+                <h3>Kafes</h3>
+                "Kalbim elde, ruhum kafeste uyuşmuş beynimse bir bilmezde."<br>
+                <p class="saga-yasla"><strong><i>-Mehmet Sedat Ergüzen</i></strong></p>
+            </div>
+
+        
+        <div id="gunun-siiri-kutusu" class="quote-box" style="margin-top: 30px; border-left: 5px solid #4e342e;">
+            <h3 id="siir-baslik">Günün Şiiri Yükleniyor...</h3>
+            <p id="siir-icerik" style="font-style: italic;">Lütfen bekleyiniz.</p>
+            <p id="siir-sair" style="text-align: right; font-weight: bold;"></p>
+            <button onclick="rastgeleSiirGetir()" style="background:#8d6e63; color:white; border-radius: 10px; padding:5px 10px; cursor:pointer; font-size:0.8rem; margin-top:10px;">Başka Şiir Getir</button>
+        </div>
+        <br>
+        <p>Bu site, kendinizin derinliklerine inmek...</p>
+        <br>
+        <h2>Öne Çıkan Koleksiyonlar</h2>
+        <div style="display: flex; gap: 20px; flex-wrap: wrap; margin-top:20px;">
+            
+            <div style="flex: 1; text-align: center;">
+                <a href="galeri.html" style="text-decoration: none; color: inherit;">
+                    <img src="resimler/Monet_-_Impression,_Sunrise.jpg" alt="Resim bulunamadı!" style="width:100%; border-radius:4px; border:1px solid #ccc;">
+                    <h3 style="margin-top:10px;">İzlenimcilik</h3>
+                </a>
+            </div>
+
+            <div style="flex: 1; text-align: center;">
+                <a href="galeri.html" style="text-decoration: none; color: inherit;">
+                    <img src="resimler/Vincent_van_Gogh_-_Almond_blossom_-_Google_Art_Project.jpg" alt="Resim Bulunamadı!" style="width:100%; border-radius:4px; border:1px solid #ccc;">
+                    <h3 style="margin-top:10px;">Badem Çiçekleri</h3>
+                </a>
+            </div>
+
+        </div>
+
+        <div class="container" id="iletisim">
+        <h2>Şiir Gönderin</h2>
+        <p>Kendi yazdığınız şiirleri bizimle paylaşmak ister misiniz?</p>
+        
+        <form id="contactForm" onsubmit="mesajGonder(event)">
+            <label for="isim">Adınız Soyadınız:</label>
+            <input type="text" id="isim" placeholder="İsminiz..." required>
+
+            <label for="email">E-posta:</label>
+            <input type="email" id="email" placeholder="email@adresiniz.com" required> <!--type="email" ifadesi yazılan kutuda @ işareti yoksa hata verir. -->
+
+            <label for="mesaj">Şiiriniz veya Mesajınız:</label>
+            <textarea id="mesaj" rows="5" placeholder="Mısralarınızı buraya dökün..."></textarea>
+
+            <button type="submit">GÖNDER</button>
+        </form>
+        </div>
+
+    <footer>
+        <p>&copy; 2025 Sözlerin İzinde - Sanat Projesi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+        </div>
+    </body>
+</html>

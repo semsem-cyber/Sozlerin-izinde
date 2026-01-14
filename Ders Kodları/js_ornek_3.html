@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dört İşlem Hesaplayıcı</title>
+    <meta charset="utf-8">
+    <style>
+        /* Biraz görsellik ekleyelim */
+        body { font-family: sans-serif; padding: 20px; }
+        input { padding: 5px; width: 100px; }
+        button { padding: 5px 15px; margin: 2px; cursor: pointer; }
+        .sonuc-kutusu { color: darkblue; font-weight: bold; margin-top: 10px; }
+    </style>
+</head>
+<body>
+
+    <h2>Basit Hesap Makinesi</h2>
+
+    <input type="number" id="sayi1" placeholder="1. Sayı">
+    <input type="number" id="sayi2" placeholder="2. Sayı">
+    <br><br>
+
+    <button onclick="hesapla('+')">Topla (+)</button>
+    <button onclick="hesapla('-')">Çıkar (-)</button>
+    <button onclick="hesapla('*')">Çarp (x)</button>
+    <button onclick="hesapla('/')">Böl (/)</button>
+
+    <p id="gosterge" class="sonuc-kutusu">Sonuç burada görünecek</p>
+
+    <script>
+        function hesapla(islemTuru) {
+            // 1. Sayıları alıyoruz
+            var s1 = document.getElementById("sayi1").value;
+            var s2 = document.getElementById("sayi2").value;
+
+            // 2. Kutular boş mu kontrol edelim
+            if (s1 == "" || s2 == "") {
+                alert("Lütfen her iki kutuya da sayı giriniz!");
+                return; // Fonksiyonu burada durdur
+            }
+
+            // 3. Metinleri sayıya çeviriyoruz (Ondalıklı sayılar için parseFloat)
+            s1 = parseFloat(s1);
+            s2 = parseFloat(s2);
+            var sonuc = 0;
+
+            // 4. Hangi butona basıldığını kontrol edip işlemi yapıyoruz
+            if (islemTuru == '+') {
+                sonuc = s1 + s2;
+            } 
+            else if (islemTuru == '-') {
+                sonuc = s1 - s2;
+            } 
+            else if (islemTuru == '*') {
+                sonuc = s1 * s2;
+            } 
+            else if (islemTuru == '/') {
+                if (s2 == 0) {
+                    alert("Bir sayı 0'a bölünemez!");
+                    return;
+                }
+                sonuc = s1 / s2;
+            }
+
+            // 5. Sonucu ekrana yazdırıyoruz
+            document.getElementById("gosterge").innerHTML = "Sonuç: " + sonuc;
+        }
+    </script>
+
+</body>
+</html>

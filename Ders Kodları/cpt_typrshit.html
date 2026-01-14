@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Giriş Ekranı</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        table {
+            width: 400px;
+            border: 2px groove #333;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            padding: 20px;
+            background: white;
+        }
+
+        h1, h2 {
+            margin: 0;
+            padding: 10px 0;
+        }
+
+        td {
+            padding: 8px;
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 95%;
+            padding: 8px;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: none;
+            background: #333;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Hoş Geldiniz</h1>
+
+    <table>
+        <tr>
+            <td colspan="2" style="text-align:center;">
+                <h2>Giriş Menüsü</h2>
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2">Kullanıcı Adı:</td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="text"></td>
+        </tr>
+
+        <tr>
+            <td colspan="2">Şifre:</td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="password"></td>
+        </tr>
+
+        <tr>
+            <td colspan="2"><button class="btn">Kayıt Ol</button></td>
+        </tr>
+
+        <tr>
+            <td colspan="2"><button class="btn">Giriş Yap</button></td>
+        </tr>
+    </table>
+
+</body>
+</html>

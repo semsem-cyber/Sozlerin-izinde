@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mısraların Sesi - Galeri</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">Mısraların Sesi</div>
+            <ul>
+                <li><a href="index.html">Anasayfa</a></li>
+                <li class="dropdown">
+                    <a href="#">Şairlerimiz ▼</a>
+                    <div class="dropdown-content">
+                        <a href="#">Nazım Hikmet</a>
+                        <a href="#">Attila İlhan</a>
+                        <a href="#">Cemal Süreya</a>
+                        <a href="#">Özdemir Asaf</a>
+                    </div>
+                </li>
+                <li><a href="gallery.html">El Yazmaları</a></li>
+                <li><a href="index.html#iletisim">Bize Yazın</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Görsel Arşiv</h1>
+        <p>Şair portreleri ve orijinal el yazmaları koleksiyonumuz. (Büyütmek için resimlere tıklayınız)</p>
+        
+        <div class="gallery-grid">
+            
+            <div class="gallery-item">
+                <img src="https://picsum.photos/id/1062/400/300" onclick="acResim(this.src)" alt="Şair Portresi">
+                <div style="padding:10px; text-align:center; background:#eee;">Eski Dönemler</div>
+            </div>
+            
+            <div class="gallery-item">
+                <img src="https://picsum.photos/id/486/400/300" onclick="acResim(this.src)" alt="Daktilo">
+                <div style="padding:10px; text-align:center; background:#eee;">Çalışma Masası</div>
+            </div>
+            
+            <div class="gallery-item">
+                <img src="https://picsum.photos/id/24/400/300" onclick="acResim(this.src)" alt="Kitap">
+                <div style="padding:10px; text-align:center; background:#eee;">İlk Basım</div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://picsum.photos/id/367/400/300" onclick="acResim(this.src)" alt="El Yazısı">
+                <div style="padding:10px; text-align:center; background:#eee;">El Yazması Notlar</div>
+            </div>
+             <div class="gallery-item">
+                <img src="https://picsum.photos/id/259/400/300" onclick="acResim(this.src)" alt="Notlar">
+                <div style="padding:10px; text-align:center; background:#eee;">Müsveddeler</div>
+            </div>
+             <div class="gallery-item">
+                <img src="https://picsum.photos/id/531/400/300" onclick="acResim(this.src)" alt="İlham">
+                <div style="padding:10px; text-align:center; background:#eee;">İlham Köşesi</div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="myLightbox" class="lightbox">
+        <span class="close" onclick="kapatResim()">&times;</span>
+        <img class="lightbox-content" id="img01">
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Mısraların Sesi - Edebiyat Projesi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

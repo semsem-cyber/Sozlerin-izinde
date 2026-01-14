@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mısraların Sesi - Anasayfa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+    <header>
+        <nav>
+            <div class="logo">Mısraların Sesi</div>
+            <ul>
+                <li><a href="index.html">Anasayfa</a></li>
+                <li class="dropdown">
+                    <a href="#">Şairlerimiz ▼</a>
+                    <div class="dropdown-content">
+                        <a href="#">Nazım Hikmet</a>
+                        <a href="#">Attila İlhan</a>
+                        <a href="#">Cemal Süreya</a>
+                        <a href="#">Özdemir Asaf</a>
+                    </div>
+                </li>
+                <li><a href="gallery.html">Galeri</a></li>
+                <li><a href="#iletisim">Bize Yazın</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Şiir, Sözcüklerin Dansıdır</h1>
+        
+        <div class="quote-box">
+            "Ben sana mecburum bilemezsin,<br>
+            Adını mıh gibi aklımda tutuyorum..." <br>
+            <br>
+            <strong>- Attila İlhan</strong>
+        </div>
+        
+        <p>Hoş geldiniz. Bu sitede Türk edebiyatının en seçkin şairlerini ve unutulmaz eserlerini bulacaksınız. Galerimizde şairlerin kendi el yazmalarını inceleyebilir, şiir dünyasında bir yolculuğa çıkabilirsiniz.</p>
+        
+        <br>
+        
+        <h2>Öne Çıkan Koleksiyonlar</h2>
+        <div style="display: flex; gap: 20px; flex-wrap: wrap; margin-top:20px;">
+            
+            <div style="flex: 1; text-align: center;">
+                <a href="gallery.html" style="text-decoration: none; color: inherit;">
+                    <img src="https://picsum.photos/id/24/400/250" alt="Eski Kitaplar" style="width:100%; border-radius:4px; border:1px solid #ccc;">
+                    <h3 style="margin-top:10px;">Eski Basım Kitaplar</h3>
+                </a>
+            </div>
+
+            <div style="flex: 1; text-align: center;">
+                <a href="gallery.html" style="text-decoration: none; color: inherit;">
+                    <img src="https://picsum.photos/id/367/400/250" alt="El Yazmaları" style="width:100%; border-radius:4px; border:1px solid #ccc;">
+                    <h3 style="margin-top:10px;">Şairlerin El Yazıları</h3>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="container" id="iletisim">
+        <h2>Şiir Gönderin</h2>
+        <p>Kendi yazdığınız şiirleri bizimle paylaşmak ister misiniz?</p>
+        
+        <form id="contactForm" onsubmit="mesajGonder(event)">
+            <label for="isim">Adınız Soyadınız:</label>
+            <input type="text" id="isim" placeholder="İsminiz..." required>
+
+            <label for="email">E-posta:</label>
+            <input type="email" id="email" placeholder="email@adresiniz.com" required>
+
+            <label for="mesaj">Şiiriniz veya Mesajınız:</label>
+            <textarea id="mesaj" rows="5" placeholder="Mısralarınızı buraya dökün..."></textarea>
+
+            <button type="submit">GÖNDER</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Mısraların Sesi - Edebiyat Projesi.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

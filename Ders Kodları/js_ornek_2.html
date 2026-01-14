@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Daire Hesaplama</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <p id="p1">Daire Hesaplayıcı</p>
+        
+        <input type="text" id="yari_cap" placeholder="Yarıçap giriniz">
+        <br><br>
+
+        <button onclick="alert('Selamlar!')">Selam Ver</button>
+        <input type="button" value="Çevre Hesapla" onclick="cevre_hesapla()">
+        <input type="button" value="Alan Hesapla" onclick="alan_hesapla()">
+        <br><br>
+
+        <p id="p2">Sonuçlar aşağıda görünecektir:</p>
+        <input type="text" id="cevre" placeholder="Çevre Sonucu" readonly>
+        <input type="text" id="alan" placeholder="Alan Sonucu" readonly>
+
+        <script>
+            function cevre_hesapla(){
+                // 1. HATA DÜZELTİMİ: .value ile değeri almalı ve sayıya çevirmeliyiz (parseFloat)
+                var element = document.getElementById("yari_cap");
+                var r = parseFloat(element.value); 
+
+                // Hesaplama (Math.PI kullanmak daha hassas sonuç verir)
+                var sonuc = 2 * Math.PI * r;
+
+                // Sonucu ilgili input kutusuna yazdırıyoruz
+                document.getElementById("cevre").value = sonuc.toFixed(2); // Virgülden sonra 2 basamak
+                document.getElementById("p2").innerHTML = "Çevre hesaplandı.";
+            }
+
+            function alan_hesapla(){
+                var element = document.getElementById("yari_cap");
+                var r = parseFloat(element.value);
+
+                // 2. HATA DÜZELTİMİ: Değişken ismini 'alan' olarak düzelttik
+                var sonuc = Math.PI * (r * r);
+
+                // 3. HATA DÜZELTİMİ: Sonucu 'alan' id'li inputa yazdırıyoruz
+                document.getElementById("alan").value = sonuc.toFixed(2);
+                document.getElementById("p2").innerHTML = "Alan hesaplandı.";
+            }
+        </script>
+    </body>
+</html>

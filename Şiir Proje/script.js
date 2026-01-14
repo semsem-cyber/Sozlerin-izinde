@@ -1,7 +1,4 @@
-/* Proje: Mısraların Sesi Web Sitesi
-   Dosya: script.js
-   Açıklama: Tüm sayfaların etkileşim kodları burada bulunur.
-*/
+
 
 // --- BÖLÜM 1: İLETİŞİM FORMU KONTROLÜ ---
 // İletişim.html sayfasındaki "Gönder" butonuna basınca çalışır.
@@ -46,7 +43,7 @@ function acResim(tiklananResimAdresi) {
     buyukResim.src = tiklananResimAdresi;
 }
 
-// Resmi Kapatma Fonksiyonu (Çarpı işaretine basınca)
+// Resmi Kapatma Fonksiyonu 
 function kapatResim() {
     // Siyah perdeyi tekrar gizle
     document.getElementById("myLightbox").style.display = "none";
